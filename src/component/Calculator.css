@@ -1,0 +1,128 @@
+.calc{
+    width: 350px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-shrink: 0;
+    border-radius: 39px;
+    margin-top: 70px;
+    overflow: hidden;
+    background: var(--grey-grey-2, #212A35);}
+
+.calc .screen{
+    height: 160px;
+    border: 1px solid rgba(116, 111, 111, 0.605);
+/* background-color: #0073ff; */
+}
+
+.calc .screen #getValue{
+    width: 100%;
+    /* margin-left: 50px; */
+    padding: 30px 20px 10px 0  ;
+    text-align: end;
+    background-color:#171c2200;
+    color:#bebebe;
+    overflow: hidden;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.26px;
+    outline: none;
+    border: 0;
+
+}
+
+.calc .screen #newValue{
+    padding: 10px 30px 0 0  ;
+    text-align: end;
+    color:#e6e6e69e;
+    font-size: 30px;
+    transition: all .2s;
+}
+
+.calc .number{
+    
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    color: white;
+    margin-top: 40px;
+}
+
+.calc .number h2{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    padding: 16px 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    background: var(--grey-grey-1, #171C22);
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.calc .number h2:hover{
+    /* color: #cf98ffb3; */
+    background-color: #39424d;
+}
+.calc #equal{
+    display: flex;
+    width: 150px;
+    height: 70px;
+    /* padding: 16px 20px; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 9px;
+    color: white;
+    background: var(--grey-grey-1, #9823ff);
+    cursor: pointer;
+    margin: -78px 0 0 52%;
+    z-index: 3;
+    transition: all .2s;
+}
+
+.calc #equal:hover{
+    background-color: #6c01c9;
+}
+
+.calc #removeNumber{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    padding: 16px 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    color: rgb(255, 255, 255);
+    background: var(--grey-grey-1, #171C22);
+    cursor: pointer;
+    margin:-109% 0 0 75%;
+}
+
+.calc #removeNumber:hover{
+    background-color: #39424d;
+}
+
+.calc #removeAll{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    padding: 16px 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    color: white;
+    background: var(--grey-grey-1, #9823ff);
+    cursor: pointer;
+    margin:-20% 0 0 5%;
+    transition: all .2s;
+}
+
+.calc #removeAll:hover{
+    background-color: #6c01c9;
+}
